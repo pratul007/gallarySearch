@@ -1,11 +1,11 @@
-import React, {useContext} from "react";
-import {useForm} from "react-hook-form";
+import React, { useContext } from "react";
+import { useForm } from "react-hook-form";
 import axios from "axios";
-import {DataContext} from "../context/ImageContext";
+import { DataContext } from "../context/ImageContext";
 
 export default function Search() {
-    const {register, handleSubmit} = useForm();
-    const {setImages} = useContext(DataContext);
+    const { register, handleSubmit } = useForm();
+    const { setImages } = useContext(DataContext);
     const onSubmit = data => {
         const tag = data.searchText
         if (tag) {
@@ -28,9 +28,9 @@ export default function Search() {
         <div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input type="text" className="search"
-                       placeholder="Search for images" {...register("searchText")}></input>
+                    placeholder="Search for images" {...register("searchText")}></input>
                 <input
-                    className=""
+                    className="sub"
                     type="submit"
                     value="Submit"
                 />

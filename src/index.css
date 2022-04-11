@@ -27,3 +27,32 @@
    background-color: wheat;
    color: black;
  }
+
+.img-size{
+  margin-top: 20px;
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+}
+.sub{
+  width: 100px;
+  height: 30px;
+}
+.bck-col{
+  background-color: linen
+}
+.btn-stl
+  {
+    background-color: linen;
+    color: black;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+.txt{
+  margin-top: 40px;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

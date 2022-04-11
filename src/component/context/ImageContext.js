@@ -16,7 +16,7 @@ export const DataContextProvider = props => {
         axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${process.env.REACT_APP_API_KEY}&format=json&nojsoncallback=1`)
             .then((res) => {
                 let photoArray = []
-                res.data.photos.photo.forEach((photo)=>{
+                res.data.photos.photo.forEach((photo) => {
                     let photoObj = {
                         url: `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`,
                         title: photo.title
@@ -28,7 +28,7 @@ export const DataContextProvider = props => {
     };
 
     return (
-        <div>DataContext
+        <div>
             <DataContext.Provider
                 value={{
                     images,

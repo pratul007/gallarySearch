@@ -1,8 +1,8 @@
-import React, {useContext} from "react";
-import {DataContext} from "../context/ImageContext";
+import React, { useContext } from "react";
+import { DataContext } from "../context/ImageContext";
 
 export default function ImageContainer() {
-    const {images} = useContext(DataContext);
+    const { images } = useContext(DataContext);
     return (
         <>
             <div>
@@ -11,9 +11,10 @@ export default function ImageContainer() {
                 {
                     images?.map((photo) => {
                         return (
-                            <>
-                                <img img src={photo.url} alt={photo.title}></img>
+                            < >
+                                <img className="img-size" img src={photo.url} alt={photo.title} ></img>
                             </>
+
                         )
                     })
                 }

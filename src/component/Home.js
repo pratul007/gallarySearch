@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <div className="bck">
-                Gallery Search App
+                Gallery Search App.
             </div>
             <Search />
             <ImageContainer />
