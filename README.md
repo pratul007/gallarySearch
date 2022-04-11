@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To Start
+
+Add your flickr API keys:
+`export REACT_APP_API_KEY=your_api_key`
+
 ## Available Scripts
 
 In the project directory, you can run:
